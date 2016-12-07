@@ -41,7 +41,9 @@ public static String compress(String input) {
     builder.append(currentVal);
     builder.append(count);
 
-    return builder.toString();
+    String result = builder.toString();
+
+    return result.length() >= input.length() ? input : result;
 }
 ```
 
